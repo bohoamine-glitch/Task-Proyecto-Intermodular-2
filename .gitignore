@@ -1,0 +1,107 @@
+
+# ==========================================
+# TASKCLASS - GITIGNORE
+# ==========================================
+
+# 1. CREDENCIALES Y CONFIGURACIÓN PRIVADA
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+config.local.php
+database.local.php
+
+# 2. CONFIGURACIÓN LOCAL DE PHP
+.phpunit.result.cache
+.php-version
+.phpactor.yml
+
+# 3. DEPENDENCIAS PHP
+/vendor/
+/composer.phar
+composer.lock
+
+# 4. DEPENDENCIAS JAVASCRIPT
+/node_modules/
+/.npm/
+/.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# 5. ARCHIVOS TEMPORALES
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 6. LOGS Y ERRORES
+*.log
+/logs/
+/tmp/
+/cache/
+/.cache/
+
+# 7. COPIAS DE SEGURIDAD
+*.backup
+*.dump
+*.sql.bak
+*.sql.gz
+*.zip
+*.rar
+*.7z
+
+# 8. BASES DE DATOS LOCALES
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# 9. CONFIGURACIÓN DE VISUAL STUDIO CODE
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.json
+
+# 10. OTROS EDITORES
+/.idea/
+/.project
+/.buildpath
+/.settings/
+
+# 11. SISTEMA OPERATIVO
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+ehthumbs.db
+
+# 12. ARCHIVOS GENERADOS
+/dist/
+/build/
+/coverage/
+/vendor/bin/.phpunit/
+
+# 13. ARCHIVOS SUBIDOS POR LOS USUARIOS
+/uploads/*
+!/uploads/.gitkeep
+
+# 14. ARCHIVOS DE ENTORNO LOCAL
+/php_errors.log
+/error_log
+/access_log
+
+# ==========================================
+# FIN DEL GITIGNORE
+# ==========================================
